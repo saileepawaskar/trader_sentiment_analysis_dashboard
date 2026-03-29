@@ -30,7 +30,6 @@ def get_data_path():
 
 # Update your load function
 DATA_PATH = get_data_path()
-st.sidebar.info(f"📁 Data folder: `{DATA_PATH}`")
 
 # Page config - WIDE layout for professional dashboard
 st.set_page_config(
