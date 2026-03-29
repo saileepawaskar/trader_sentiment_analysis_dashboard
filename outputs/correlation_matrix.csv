@@ -1,0 +1,5 @@
+,pnl,size_usd,leverage,value
+pnl,1.0,0.124,,0.008
+size_usd,0.124,1.0,,-0.03
+leverage,,,,
+value,0.008,-0.03,,1.0
