@@ -37,30 +37,14 @@ streamlit run app.py
 trader-sentiment-dashboard/
 ├── app.py                   # 🎮 Main dashboard
 ├── data_preprocessing.py    # 🔧 Data loading & cleaning
-├── analysis.py             # 📈 Metrics & stats
-├── data/                   # 📊 YOUR CSVs HERE
-│   ├── trader_data.csv     # Account, PnL, size_usd, timestamp
-│   └── fear_greed.csv      # Timestamp, fear_greed_index (0-100)
-├── outputs/                # 💾 Auto-generated reports
-├── requirements.txt        # 📦 Dependencies
-└── README.md              # 📖 This file
+├── analysis.py              # 📈 Metrics & stats
+├── data/                    # 📊 YOUR CSVs HERE
+│   ├── *.csv                # CSV files
+├── outputs/                 # 💾 Auto-generated reports
+├── requirements.txt         # 📦 Dependencies
+└── README.md                # 📖 This file
 ```
 
-## 📈 **Expected Data Format**
-
-**trader_data.csv:**
-```csv
-account,timestamp,pnl,size_usd,leverage
-0xabc123,2024-01-01 10:30:00,150.50,50000,5x
-0xdef456,2024-01-01 11:15:00,-75.20,25000,3x
-```
-
-**fear_greed.csv:**
-```csv
-timestamp,fear_greed_index
-2024-01-01,72
-2024-01-02,45
-```
 
 ## 🎛️ **Dashboard Features**
 
@@ -91,14 +75,6 @@ numpy==2.1.1
 scipy==1.14.1
 ```
 
-## 🔍 **Troubleshooting**
-
-| Error | Fix |
-|--------|-----|
-| `data/trader_data.csv not found` | Put CSVs in `data/` folder |
-| `ModuleNotFoundError` | Ensure `data_preprocessing.py` & `analysis.py` exist |
-| Slow loading | Use upload feature in app |
-| No outputs | Click **GENERATE REPORTS** first |
 
 ## 💾 **Outputs Generated**
 ```
@@ -117,11 +93,6 @@ outputs/
 4. 🔄 GENERATE REPORTS
 5. 💾 ZIP ALL FILES → 📧 Share!
 ```
-
-## 🤝 **Support**
-- **Issues?** Check Troubleshooting table
-- **Customize?** Edit `analysis.py` functions
-- **Data questions?** Adjust `merge_and_clean()` in `data_preprocessing.py`
 
 ## 📊 **Sample Metrics**
 ```
